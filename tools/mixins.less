@@ -1,0 +1,44 @@
+.screensize-s( @rules ) {
+    @media only screen and (max-width: @breakpoint-s) {
+        @rules();
+    }
+}
+
+.screensize-m( @rules ) {
+    @media only screen and (min-width: @breakpoint-s) and (max-width: @breakpoint-m) {
+        @rules();
+    }
+}
+
+.screensize-l( @rules ) {
+    @media only screen and (min-width: @breakpoint-m) and (max-width: @breakpoint-l) {
+        @rules();
+    }
+}
+
+.screensize-above-l( @rules ) {
+    @media only screen and (min-width: @breakpoint-l) {
+        @rules();
+    }
+}
+
+.screen-s-hidden {
+    .screensize-s( {
+        display: none !important;
+    });
+}
+
+.screen-m-hidden {
+    .screensize-m( {
+        display: none !important;
+    });
+}
+
+.screen-l-hidden {
+    .screensize-l( {
+        display: none !important;
+    });
+    .screensize-above-l( {
+        display: none !important;
+    });
+}

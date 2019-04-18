@@ -1,0 +1,22 @@
+* {
+    font-family: @default-font-family;
+    font-size: @default-font-size;
+
+    box-sizing: border-box;
+}
+
+body {
+    color: @text-color;
+    background-color: @default-body-color;
+}
+
+a {
+    color: @link-color;
+}
+p {
+    line-height: 1.35em;
+
+    & + p {
+        margin-top: 1em;
+    }
+}
