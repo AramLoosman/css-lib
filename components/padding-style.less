@@ -1,52 +1,85 @@
+/*
+
+Padding styles are classes to define the padding of an element
+
+Add the main padding-style class and specify what paddings you need
+First letter describes the padding size, second letter the position
+
+*/
+
 .padding-style {
 
-    &.-padding-l-s {
+    &.-padding-s-l { // left
         padding-left: @default-margin/2;
     }
-    &.-padding-r-s {
+    &.-padding-s-r { // right
         padding-right: @default-margin/2;
     }
-    &.-padding-t-s {
+    &.-padding-s-t { // top
         padding-top: @default-margin/2;
     }
-    &.-padding-b-s {
+    &.-padding-s-b { // bottom
         padding-bottom: @default-margin/2;
     }
-    &.-padding-s {
+    &.-padding-s-h { // horizontal
+        padding-left: @default-margin/2;
+        padding-right: @default-margin/2;
+    }
+    &.-padding-s-v { // vertical
+        padding-top: @default-margin/2;
+        padding-bottom: @default-margin/2;
+    }
+    &.-padding-s { // all around
         padding: @default-margin/2;
     }
 
-    // normal
-    &.-padding-l {
+    // medium
+    &.-padding-m-l { // left
         padding-left: @default-margin;
     }
-    &.-padding-r {
+    &.-padding-m-r { // bottom
         padding-right: @default-margin;
     }
-    &.-padding-t {
+    &.-padding-m-t { // top
         padding-top: @default-margin;
     }
-    &.-padding-b {
+    &.-padding-m-b { // bottom
         padding-bottom: @default-margin;
     }
-    &.-padding-m {
+    &.-padding-m-h { // horizontal
+        padding-left: @default-margin;
+        padding-right: @default-margin;
+    }
+    &.-padding-m-v { // vertical
+        padding-top: @default-margin;
+        padding-bottom: @default-margin;
+    }
+    &.-padding-m { // all around
         padding: @default-margin;
     }
 
     // large
-    &.-padding-l-l {
+    &.-padding-l-l { // left
         padding-left: @default-margin*2;
     }
-    &.-padding-r-l {
+    &.-padding-l-r { // right
         padding-right: @default-margin*2;
     }
-    &.-padding-t-l {
+    &.-padding-l-t { // top
         padding-top: @default-margin*2;
     }
-    &.-padding-b-l {
+    &.-padding-l-b { // bottom
         padding-bottom: @default-margin*2;
     }
-    &.-padding-l {
+    &.-padding-l-h { // horizontal
+        padding-left: @default-margin*2;
+        padding-right: @default-margin*2;
+    }
+    &.-padding-l-v { // vertical
+        padding-top: @default-margin*2;
+        padding-bottom: @default-margin*2;
+    }
+    &.-padding-l { // all around
         padding: @default-margin*2;
     }
 
