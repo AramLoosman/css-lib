@@ -1,52 +1,86 @@
+/*
+
+Margin styles are classes to define the margin of an element
+
+Add the main margin-style class and specify what margins you need
+First letter describes the margin size, second (optional) letter the position
+
+
+*/
+
 .margin-style {
 
-    &.-margin-l-s {
+    &.-margin-s-l { // left small
         margin-left: @default-margin/2;
     }
-    &.-margin-r-s {
+    &.-margin-s-r { // right small
         margin-right: @default-margin/2;
     }
-    &.-margin-t-s {
+    &.-margin-s-t { // top small
         margin-top: @default-margin/2;
     }
-    &.-margin-b-s {
+    &.-margin-s-b { // bottom small
         margin-bottom: @default-margin/2;
     }
-    &.-margin-s {
+    &.-margin-s-h { // horizontal small
+        margin-left: @default-margin/2;
+        margin-right: @default-margin/2;
+    }
+    &.-margin-s-v { // vertical small
+        margin-top: @default-margin/2;
+        margin-bottom: @default-margin/2;
+    }
+    &.-margin-s { // all around small
         margin: @default-margin/2;
     }
 
-    // normal
-    &.-margin-l {
+    // medium
+    &.-margin-m-l { // left medium
         margin-left: @default-margin;
     }
-    &.-margin-r {
+    &.-margin-m-r { // right medium
         margin-right: @default-margin;
     }
-    &.-margin-t {
+    &.-margin-m-t { // top medium
         margin-top: @default-margin;
     }
-    &.-margin-b {
+    &.-margin-m-b { // bottom medium
         margin-bottom: @default-margin;
     }
-    &.-margin-m {
+    &.-margin-m-h { // horizontal medium
+        margin-left: @default-margin;
+        margin-right: @default-margin;
+    }
+    &.-margin-m-v { // vertical medium
+        margin-top: @default-margin;
+        margin-bottom: @default-margin;
+    }
+    &.-margin-m { // all around medium
         margin: @default-margin;
     }
 
     // large
-    &.-margin-l-l {
+    &.-margin-l-l { // left large
         margin-left: @default-margin*2;
     }
-    &.-margin-r-l {
+    &.-margin-l-r { // right large
         margin-right: @default-margin*2;
     }
-    &.-margin-t-l {
+    &.-margin-l-t { // top large
         margin-top: @default-margin*2;
     }
-    &.-margin-b-l {
+    &.-margin-l-b { // bottom large
         margin-bottom: @default-margin*2;
     }
-    &.-margin-l {
+    &.-margin-l-h { // horizontal large
+        margin-left: @default-margin*2;
+        margin-right: @default-margin*2;
+    }
+    &.-margin-l-v { // vertical large
+        margin-top: @default-margin*2;
+        margin-bottom: @default-margin*2;
+    }
+    &.-margin-l { // all around large
         margin: @default-margin*2;
     }
 
