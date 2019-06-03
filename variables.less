@@ -1,6 +1,7 @@
 /* Colors */
 @color-main: red;
 @color-dark: #1A1A1A;
+@color-inactive: lightgray;
 
 @text-color: @color-dark;
 @link-color: @color-main;
@@ -19,3 +20,12 @@
 @breakpoint-s: 768px;
 @breakpoint-m: 992px;
 @breakpoint-l: 1200px;
+
+/* Inputs */
+@input-border: 2px solid @color-inactive;
+@input-border-radius: @default-font-size / 8;
+@input-padding: @default-font-size - ( @default-font-size / 4 );
+@input-focus-color: rgb(59, 153, 252);
+
+/* Shadow */
+@default-shadow: 0 1px 2px @color-dark;

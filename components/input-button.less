@@ -1,0 +1,21 @@
+.input-button, input[type="submit"], input[type="button"] {
+    border: @input-border;
+    border-radius: @input-border-radius;
+    padding: 0.6em;
+    margin-bottom: 0.2em;
+
+    text-decoration: none;
+    color: @text-color;
+    background-color: @color-inactive;
+
+    box-shadow: @default-shadow;
+
+    &:hover {
+        box-shadow: 0 1em/18 1em/9 lighten(@color-dark, 25%);
+    }
+
+    &.-cta {
+        background-color: @color-main;
+        border-color: @color-main;
+    }
+}
