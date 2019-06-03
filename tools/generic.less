@@ -21,12 +21,12 @@ p {
     }
 }
 
-input {
+input, textarea {
     padding: 0.6em;
     border-radius: @input-border-radius;
     border: @input-border;
-}
 
-input:focus {
-    outline: @input-focus-color auto 0.3em;
+    &:focus {
+        outline: @input-focus-color auto 0.3em;
+    }
 }
